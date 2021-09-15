@@ -42,7 +42,7 @@ class AbstractModel(ABC):
                 name = 'Unknown'
             if image is not None:
                 temp_path = self.path_to_img + image
-                if self._file_exists(temp_path) == True:
+                if self._file_exists(temp_path) is True:
                     image_path = temp_path
                 else:
                     image_path = self.default_image
@@ -56,7 +56,7 @@ class AbstractModel(ABC):
             f = open(path_to_file)
             f.close()
             return True
-        except:
+        except Exception:
             return False
 
 
@@ -75,5 +75,5 @@ class SequentialOrderModel(AbstractModel):
     def _pop_quote(self):
         try:
             return self.quotes.pop(0)
-        except:
+        except Exception:
             return None

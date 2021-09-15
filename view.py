@@ -1,7 +1,6 @@
 __author__ = 'ZackDev'
 
 from tkinter import Label, Frame, StringVar, PhotoImage, Tk
-from abc import ABC, abstractmethod
 
 
 class GridView(Tk):
