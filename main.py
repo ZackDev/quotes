@@ -8,7 +8,7 @@ from view import *
 class Client:
     def __init__(self):
         model = RandomOrderModel()
-        #model = SequentialOrderModel()
+        # model = SequentialOrderModel()
         controller = ControllerA()
         view = GridView(controller)
 

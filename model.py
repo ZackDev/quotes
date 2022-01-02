@@ -20,7 +20,7 @@ class AbstractModel(ABC):
 
     @abstractmethod
     def get_quote(self):
-        pass
+        raise NotImplementedError
 
     def __init__(self):
         self.data_source = minidom.parse(self.xml_file)

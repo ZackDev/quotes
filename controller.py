@@ -11,7 +11,7 @@ class AbstractController(ABC):
 
     @abstractmethod
     def get_quote(self):
-        pass
+        raise NotImplementedError
 
 
 class ControllerA(AbstractController):
