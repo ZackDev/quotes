@@ -61,7 +61,10 @@ class RandomOrderModel(AbstractModel):
         return self._get_random_quote()
 
     def _get_random_quote(self):
-        return random.choice(self.quotes)
+        if len(self.quotes) > 0:
+            return random.choice(self.quotes)
+        else:
+            return None
 
 
 class SequentialOrderModel(AbstractModel):
