@@ -1,9 +1,9 @@
 __author__ = 'ZackDev'
 
-import xml.dom.minidom as minidom
-import random as random
-import os
 from abc import ABC, abstractmethod
+import os
+import random as random
+import xml.dom.minidom as minidom
 
 
 class Data:
