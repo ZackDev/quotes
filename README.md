@@ -28,4 +28,9 @@ Type `python3 main.py` into a terminal to display the quotes contained in the `c
   * not providing an `image` attribute displays the *default.png*
 * the image's default path is `./img/`, add them there
 
+## Used custom Fonts in PostcardView:
+[Line 18](https://github.com/ZackDev/quotes/blob/main/view.py#L18) - [1942 Report](https://www.dafont.com/1942-report.font)
+
+[Line 23](https://github.com/ZackDev/quotes/blob/main/view.py#L23) - [Photograph Signature](https://www.dafont.com/photograph-signature.font)
+
 ![Ancient Ruins](./img/default.png)
