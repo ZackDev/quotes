@@ -10,7 +10,7 @@ class Client:
         model = RandomOrderModel()
         # model = SequentialOrderModel()
         controller = ControllerA()
-        view = GridView(controller)
+        view = PostcardView(controller)
 
         controller.run(model, view)
 

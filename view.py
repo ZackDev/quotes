@@ -3,7 +3,7 @@ __author__ = 'ZackDev'
 from tkinter import Frame, Label, PhotoImage, StringVar, Tk
 
 
-class GridView(Tk):
+class PostcardView(Tk):
     def __init__(self, controller):
         super().__init__()
         self.title('Stoic Quotes')
