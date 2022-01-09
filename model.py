@@ -2,6 +2,7 @@ __author__ = 'ZackDev'
 
 import xml.dom.minidom as minidom
 import random as random
+import os
 from abc import ABC, abstractmethod
 
 
@@ -52,12 +53,7 @@ class AbstractModel(ABC):
                 self.quotes.append(Data(name, quote, image_path))
 
     def _file_exists(self, path_to_file):
-        try:
-            f = open(path_to_file)
-            f.close()
-            return True
-        except Exception:
-            return False
+        return os.path.isfile(path_to_file)
 
 
 class RandomOrderModel(AbstractModel):
